@@ -1,0 +1,166 @@
+.wrapper{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+.wrapper img{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 670px;
+
+}
+.container {
+    height: 560px;
+    width: 532px;
+    margin: 0 auto;
+    box-shadow: 2px 2px 15px rgb(0,0,0.2);
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    z-index: 10;
+    top: 56px;
+}
+.fa {
+    top: -4px;
+    position: relative;
+    width: 14px;
+    height: 15px;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    padding: 7px 9px 7px 9px;
+    left: 7px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+}
+.container form{
+    height: 600px;
+    width: 500px;
+    padding: 20px;
+    padding-left: 5px;
+    font-family: system-ui;
+    text-align: center;
+}
+.container form h1{
+    text-align: center;
+    font-family: system-ui;
+    margin-bottom: 50px;
+}
+.container form #Name,#mail,#password,#password1,#date,#number{
+ height: 31px;
+    width: 240px;
+    margin-bottom: 23px;
+    border: none;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background-color: #ededed;
+    position: relative;
+    top: -6px;
+}
+.container form #radio{
+
+}
+.container form .design{
+    width: 137px;
+    height: 24px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.container form .design b{
+   float: right;
+}
+
+.container form #Name::placeholder , #password::placeholder , #password1::placeholder , #number::placeholder , #mail::placeholder #date::placeholder , #radio::placeholder{
+    position: relative;
+    left: 20px;
+}
+.container form button{
+    height: 43px;
+    width: 120px;
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+    top: 55px;
+}
+/*
+@mediaQuery
+*/
+@media(max-width:700px){
+    
+    .wrapper img{
+        width: 140vw;
+        
+    }
+    .container{
+        width: 408px;
+
+        padding-right: 45px;
+
+    }
+    .container form{
+        width: 300px;
+    }
+    .container form #Name,#mail,#password,#password1,#date,#number{
+        width: 180px;
+    }
+    .container form .fa{
+        width: 0px;
+        height: 0px;
+        padding: 0px;
+        opacity: 0;
+    }
+.container form .design{
+    width: 60px;
+    height: 24px;
+    margin-right: 29px;
+}
+.container form .design b{
+    font-size: 0.95rem;
+}
+.container form h1{
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+
+}
+.container form button{
+    width: 80px;
+    font-size: 0.8rem;
+}
+
+}
+@media(max-width:500px){
+    .container{
+
+    width: 280px;
+    min-width: fit-content;
+
+}
+.container form{
+    width: 241px;
+}
+.container form #Name,#mail,#password,#password1,#date,#number{
+    width: 123px;
+}
+.container form ,.design{
+    margin: 0px;
+}
+}
+@media(max-width:450px){
+    .container{
+        width: fit-content;
+        min-width: 200px;
+    }
+}
